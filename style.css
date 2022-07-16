@@ -100,7 +100,7 @@ header {
 
 
 
-.navlist li:hover>ul {
+.navlist li:hover>ol {
     opacity: 1;
     visibility: visible;
     transition: all .5s ease;
@@ -320,6 +320,7 @@ footer {
     background-color: hsl(240, 10%, 16%);
     width: 100%;
     border-radius: 0px 80px 0px 0px;
+    position: relative;
 }
 
 .navFooter {
@@ -333,17 +334,29 @@ footer {
     color: hsl(240, 2%, 79%);
 }
 
-.navFooter li ul {
+.navFooter li ol {
     list-style-type: none;
     margin-top: 35px;
 }
 
-.navFooter li ul li {
+.navFooter li ol li {
     list-style-type: none;
     margin-top: 20px;
     margin: 15px 0px;
 }
 
+.attribution{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    color: rgb(241, 14, 14);
+
+
+}
+.attribution a{
+    color: #fff;
+    text-decoration: none;
+}
 
 /* responsive css start here  */
 
@@ -684,7 +697,7 @@ footer {
         margin-top: 15px;
     }
     
-    .navFooter li ul li {
+    .navFooter li ol li {
         list-style-type: none;
         margin-top: 20px;
         margin: 15px 0px;
